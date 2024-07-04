@@ -2,6 +2,13 @@
 
 function filterInStockProducts(products) {
   // เริ่มเขียนโค้ดตรงนี้
+  let productsMorezero = products.filter((data) =>{
+    if(data.quantity>0){
+    return data;
+    }
+  })
+  return productsMorezero;
+
 }
 
 // ตัวอย่างการใช้งาน
